@@ -3,20 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My website</title>
 </head>
 <body>
-    <!-- this is a comment  -->
-        <h1>My website</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
-        <h5>Header 5</h5>
-        <h6>Header 6</h6>
-        <p>this is a paragraph</p>
-        <img src="me.jpg" alt="jag">
-     <!-- länka till about sida -->
-        <a href="about.html">about</a>
-        <button>Click me</button>
+    <header>
+     <div>
+            <div class="nav-intro">
+                <h4>Sofia Hjerpe</h4>
+                <p>Hi! My name is Sofia and I am 24 years old. I am a junior Frontend developer.</p>
+            </div>
+        <nav> 
+            <a href="index.html">home</a> | <a href="about.html">about</a>
+        </nav>
+     <div class="ovrigt">
+        <a href="https://github.com/SofiaHjerpe"><img src="github.png" alt="github" /></a>
+        <a href="https://sofiahjerpe.netlify.app/"><img src="logomy.jpg" alt="github" /></a>
+    
+    </div>
+        </div>
+    </header>
+    <main>
+    <div class="welcome">
+        <h2>Welcome to my website!</h2>
+
+        <p>Hi! My name is Sofia and I come from Tullinge. Tullinge is a small town in the south of Stockholm. During my free time I like to dance Salsa and Lindihop and be with friends. I also like to read books.</p><br>
+           <p>***</p> <br>
+        <p>I have a bachelor degree at IT, media and design at Södertörns Högskola. During my studies learned about Interaction design, UX/UI design process, Adobe programs, Concept design and product design etc. I also learned about programming in Dart, Javascript, MySql, CSS and HTML etc. </p> <br>
+           <p>***</p> <br>
+        <p>I like programming because it is always something new to learn. Sometimes it can be tricky but then you do your best to solve the issue. I like languages and can speak both English and Spanish,(and a little french). I like to build and create visual content and intuitive websites.</p>
+
+        <img class="myImg" src="me.jpg" alt="jag">
+      </div>
+      <section>
+      <h2>Mina programmeringsspråk</h2>
+      <ul>
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>Vue.js</li>
+        <li>Dart</li>
+        <li>.Net Core MVC</li>
+        <li>MySql</li>
+        <li>Express Handlebars</li>
+        <li>.Net Core WebApi</li>
+        <li>P5.js</li>
+        <li>PHP</li>
+        <li>Wordpress</li>
+      </ul>
+      </section>
+  </main>
+  <footer>
+    <p> 29/11-2023</p> <br>
+    <p>© 2023 Sofia Hjerpe, No rights reserved</p> <br>
+  </footer>
 </body>
 </html>
+<style>
+    h4 {
+        font-style: italic;
+    }
+    img {
+        max-width: 40px;
+        max-height: 40px;
+        margin-inline: 10px;
+    }
+    .myImg {
+        max-width: 400px;
+        max-height: 500px;
+    }
+    .welcome {
+        display:flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: 400px;
+    }
+    div {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+    }
+    .nav-intro {
+        display:flex; 
+        flex-direction: column;
+    }
+    footer{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: #929292;
+    }
+    @media screen and (max-width: 900px){
+        .welcome {
+            margin-inline: 100px;
+        }
+    }
+</style>
